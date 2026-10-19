@@ -148,5 +148,5 @@ const styles = StyleSheet.create({
   rowBetween: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8, marginVertical: 6 },
   btn: { borderWidth: 1, borderRadius: 8, paddingVertical: 8, paddingHorizontal: 14, alignItems: 'center', marginTop: 4 },
   mono: { fontFamily: Platform.select({ ios: 'Menlo', default: 'monospace' }), fontSize: 12, marginTop: 4 },
-  image: { width: '100%', height: 160, marginBottom: 12 },
+  image: { width: '100%', height: 96, marginBottom: 12 },
 });

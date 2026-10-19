@@ -147,10 +147,10 @@ export class UploadMultipart extends HttpbinModel {
 }
 
 export class DownloadImage extends ModelTargetType<unknown> {
-  get baseURL() { return new HttpbinTarget().kBaseURL; }
-  get requestPath() { return 'image/png'; }
+  get baseURL() { return new DummyJsonTarget().kBaseURL; }
+  get requestPath() { return 'icon/bm-networking/96'; }
   get requestMethod() { return HTTPMethod.get; }
-  get requestTask() { return RequestTask.download('https://httpbin.org/image/png'); }
+  get requestTask() { return RequestTask.download('https://dummyjson.com/icon/bm-networking/96'); }
   get useUniqueFilename() { return true; }
 }
 
