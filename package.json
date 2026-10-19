@@ -1,6 +1,6 @@
 {
   "name": "bm-react-native-networking",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Type-safe React Native networking layer: one class per endpoint, token refresh with retry, payload encryption, WebSocket streams, SSL pinning and a network inspector.",
   "license": "MIT",
   "main": "dist/index.js",
