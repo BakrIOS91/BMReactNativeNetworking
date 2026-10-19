@@ -1,4 +1,4 @@
-import { utf8Decode } from '../../utils/bytes';
+import { utf8Decode } from '../../helpers/bytes';
 
 declare const __DEV__: boolean | undefined;
 

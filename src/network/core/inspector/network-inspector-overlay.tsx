@@ -10,7 +10,7 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import { utf8Decode } from '../../../utils/bytes';
+import { utf8Decode } from '../../../helpers/bytes';
 import { NetworkInspector, type InspectorBrightness } from './network-inspector';
 import { isErrorEntry, isPending, type NetworkLogEntry } from './network-log-entry';
 import { accelerometerShakeSource, type ShakeSource } from './shake-detector';

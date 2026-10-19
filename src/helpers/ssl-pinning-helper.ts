@@ -1,4 +1,4 @@
-import { APIError, APIErrorType } from '../helpers/api-error';
+import { APIError, APIErrorType } from './api-error';
 import type { SSLPinningConfiguration } from '../network/core/ssl-pinning';
 
 /**

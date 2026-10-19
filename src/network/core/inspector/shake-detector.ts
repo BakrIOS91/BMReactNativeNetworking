@@ -1,4 +1,4 @@
-import type { Unsubscribe } from '../../../utils/emitter';
+import type { Unsubscribe } from '../../../helpers/emitter';
 
 /** Subscribes to device shakes. Return an unsubscribe function. */
 export type ShakeSource = (onShake: () => void) => Unsubscribe;

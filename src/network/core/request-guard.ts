@@ -1,7 +1,7 @@
 import { APIError, APIErrorType } from '../../helpers/api-error';
 import type { CancelToken } from './cancel-token';
 import { NetworkMonitor } from './network-monitor';
-import type { Unsubscribe } from '../../utils/emitter';
+import type { Unsubscribe } from '../../helpers/emitter';
 
 export interface RequestGuardOptions {
   /** Whether the request can change server state. */

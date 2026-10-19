@@ -7,8 +7,8 @@ import {
   RequestType,
 } from '../helpers/enums';
 import { currentFileSystem } from '../platform/file-system';
-import { buildQueryString, resolveUrl, withQuery } from '../utils/url';
-import { concatBytes, utf8Encode } from '../utils/bytes';
+import { buildQueryString, resolveUrl, withQuery } from '../helpers/url';
+import { concatBytes, utf8Encode } from '../helpers/bytes';
 import { NetworkConfig } from './core/network-config';
 import type { BMRequest } from './core/transport';
 import type { TargetRequest } from './target-request';

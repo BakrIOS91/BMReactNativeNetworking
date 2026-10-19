@@ -1,6 +1,6 @@
 import { NetworkMonitor } from '../network/core/network-monitor';
 import { TokenRefreshRegistry } from '../network/token-refresh-handler';
-import { Emitter } from '../utils/emitter';
+import { Emitter } from '../helpers/emitter';
 import { ReconnectPolicies, type ReconnectPolicy } from './reconnect-policy';
 
 /** Connection lifecycle of a [BMWebSocketClient]. */

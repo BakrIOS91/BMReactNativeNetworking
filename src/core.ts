@@ -25,7 +25,7 @@ export * from './network/core/request-task';
 export * from './network/core/result';
 export * from './network/core/ssl-pinning';
 export * from './network/core/transport';
-export * from './ssl/ssl-pinning-helper';
+export * from './helpers/ssl-pinning-helper';
 export * from './platform/file-system';
 
 // Inspector
@@ -43,5 +43,5 @@ export * from './network/token-refresh-handler';
 // WebSocket
 export * from './websocket/reconnect-policy';
 export * from './websocket/websocket-client';
-export { utf8Encode, utf8Decode, base64Encode, base64Decode } from './utils/bytes';
-export { Emitter, type Unsubscribe } from './utils/emitter';
+export { utf8Encode, utf8Decode, base64Encode, base64Decode } from './helpers/bytes';
+export { Emitter, type Unsubscribe } from './helpers/emitter';

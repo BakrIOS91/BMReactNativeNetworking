@@ -3,7 +3,7 @@ import type { NetworkInterceptor } from '../interceptor';
 import type { BMRequest, TransportResponse } from '../transport';
 import { NetworkInspector } from '../inspector/network-inspector';
 import type { NetworkLogEntry } from '../inspector/network-log-entry';
-import { utf8Encode } from '../../../utils/bytes';
+import { utf8Encode } from '../../../helpers/bytes';
 
 /**
  * Logs requests and responses to the console (via [Logger]) and to the in-app

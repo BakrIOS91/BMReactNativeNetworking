@@ -395,7 +395,7 @@ describe('SSLPinningHelper', () => {
 
   test('the default loader resolves the optional module', () => {
     jest.isolateModules(() => {
-      const { SSLPinningHelper: Fresh } = require('../src/ssl/ssl-pinning-helper');
+      const { SSLPinningHelper: Fresh } = require('../src/helpers/ssl-pinning-helper');
       expect(Fresh.loadModule()).toBeUndefined();
     });
   });

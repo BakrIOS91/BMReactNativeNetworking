@@ -1,4 +1,4 @@
-import { Emitter, type Unsubscribe } from '../../utils/emitter';
+import { Emitter, type Unsubscribe } from '../../helpers/emitter';
 
 /** Minimal connectivity source. Implement it to use a library other than NetInfo. */
 export interface ConnectivityProvider {

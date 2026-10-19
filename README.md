@@ -64,10 +64,10 @@ A `Target` holds your base URL. Create one subclass per API origin.
 ```ts
 import { AppEnvironment, Target } from 'bm-react-native-networking';
 
-export const appEnv = { current: AppEnvironment.production };
+// Once at startup, from your .env (e.g. react-native-config / babel-plugin-dotenv):
+Target.configureEnvironment(process.env.APP_ENV); // 'prod' | 'staging' | 'dev' ...
 
 export class AppApiTarget extends Target {
-  get appEnvironment() { return appEnv.current; }
   get kAppScheme() { return 'https'; }
   get kAppHost() {
     switch (this.appEnvironment) {
@@ -89,7 +89,9 @@ export class AppApiTarget extends Target {
 | `kMainAPIPath` | `api` | `.../api/` |
 | `kAppApiPath` | `v1` | `.../api/v1/` |
 
-`new AppApiTarget().kBaseURL` returns the final URL.
+`new AppApiTarget().kBaseURL` returns the final URL. The environment comes from
+`Target.configureEnvironment(...)`; pass one explicitly only to override it
+(`new AppApiTarget(AppEnvironment.staging)`). Unset, it defaults to `development`.
 
 ## Step 2 — Create Request Classes
 

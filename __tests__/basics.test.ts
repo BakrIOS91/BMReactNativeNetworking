@@ -4,7 +4,7 @@ import {
   base64Decode, base64Encode, cookieHeader, httpStatusCodeFrom, isReadOnlyMethod, parseSetCookieHeader, utf8Decode, utf8Encode,
   ReconnectPolicies, isPending, isErrorEntry,
 } from '../src/core';
-import { buildQueryString, lastPathSegment, resolveUrl, withQuery } from '../src/utils/url';
+import { buildQueryString, lastPathSegment, resolveUrl, withQuery } from '../src/helpers/url';
 
 describe('enums', () => {
   test.each([

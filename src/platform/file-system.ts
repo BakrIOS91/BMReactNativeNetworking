@@ -1,4 +1,4 @@
-import { base64Encode } from '../utils/bytes';
+import { base64Encode } from '../helpers/bytes';
 import { APIError, APIErrorType } from '../helpers/api-error';
 import { NetworkConfig } from '../network/core/network-config';
 

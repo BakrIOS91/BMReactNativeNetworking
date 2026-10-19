@@ -4,7 +4,7 @@ import {
   NetworkInspector, ReconnectPolicies, RsaPadding, Success, Target, appEnvironmentFromString,
   base64Decode, base64Encode, httpStatusCodeFrom, parseSetCookieHeader, utf8Decode, utf8Encode,
 } from '../src/core';
-import { resolveUrl } from '../src/utils/url';
+import { resolveUrl } from '../src/helpers/url';
 import { TestTarget, resetAll } from './helpers';
 
 beforeEach(resetAll);

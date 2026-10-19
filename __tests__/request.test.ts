@@ -174,6 +174,19 @@ describe('Target', () => {
     expect(new Root().kBaseURL).toBe('http://h.io/');
   });
 
+  test('environment: optional ctor override, configurable global default', () => {
+    class T extends Target { get kAppHost() { return 'h.io'; } get kAppScheme() { return 'https'; } }
+    try {
+      Target.configureEnvironment(undefined);
+      expect(new T().appEnvironment).toBe(AppEnvironment.development);
+      Target.configureEnvironment('prod');
+      expect(new T().appEnvironment).toBe(AppEnvironment.production);
+      expect(new T(AppEnvironment.staging).appEnvironment).toBe(AppEnvironment.staging);
+    } finally {
+      Target.configureEnvironment(AppEnvironment.development);
+    }
+  });
+
   test('payload field names stay configurable', () => {
     expect(AesKeyFormat.hexString).toBe('hexString');
   });
