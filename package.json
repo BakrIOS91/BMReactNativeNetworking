@@ -57,5 +57,13 @@
     "react-test-renderer": "^18.2.0",
     "ts-jest": "^29.1.2",
     "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BakrIOS91/BMReactNativeNetworking.git"
+  },
+  "homepage": "https://github.com/BakrIOS91/BMReactNativeNetworking#readme",
+  "bugs": {
+    "url": "https://github.com/BakrIOS91/BMReactNativeNetworking/issues"
   }
 }
